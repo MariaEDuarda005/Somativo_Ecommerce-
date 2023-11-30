@@ -1,0 +1,156 @@
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+    padding: 50px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #ecccd4;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+section h2{
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #585353;
+    color: #f5f5f5;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.Enviar a{
+    text-decoration: none;
+    color: black;
+}
+
+form button:hover{
+    background-color: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+.rodape {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: 1px;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    border-top: 5px solid rgb(85, 77, 77);
+}
+
+
+.itens-footer{
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.local-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 150px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+    width: 100%;
+    text-decoration: none;
+}
+.itens-footer i {
+    color: #000000;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+/*pagina do obrigado*/
+
+.main_obrigado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    margin-bottom: 50px;
+}
+
+.bnt{
+    padding: 15px 55px;
+    background-color: #fdfdfd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.bnt:hover{
+    border-radius: 16px;
+}
