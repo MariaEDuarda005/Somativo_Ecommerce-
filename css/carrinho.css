@@ -103,6 +103,12 @@
     display: block;
 }
 
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .checkout-button {
     background-color: #d17b90;
     color: #fff;
@@ -113,13 +119,16 @@
     font-weight: bold;
     font-size: 20px;
     height: 40px;
-    width: 250px;
+    width: 390px;
     border-radius: 10px;
 }
 
 .checkout {
     font-weight: bold;
     font-size: 19px;
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
 }
 /* .checkout {
     display: flex;
