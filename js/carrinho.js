@@ -1,7 +1,10 @@
 import{calcTotalQuant} from "./funcoes.js"
 let carrinhoCompras = JSON.parse(localStorage.getItem('carrinho'))
 
-let pedidos = []
+let pedidos = JSON.parse(localStorage.getItem('pedidos'))
+if (pedidos == null || pedidos == 0){
+    pedidos = []
+}
 
 console.log(carrinhoCompras)
 if(carrinhoCompras == null){
@@ -46,10 +49,9 @@ delBtn.forEach(botao => botao.addEventListener("click", (event) => {
     console.log(carrinhoCompras)
 }))
 
-// a partir dai é a aula 23/11 - sá errado, pois o formulario está em outra pag
+// a partir dai é a aula 23/11
 let finalizar = document.querySelector(".checkout-button")
 finalizar.addEventListener('click', ()=> {
-    
     let endereco = {
         nome: document.querySelector("input#nome").value,
         logradouro: document.querySelector("input#logradouro").value,
@@ -70,6 +72,8 @@ finalizar.addEventListener('click', ()=> {
     }// crio um objeto que guarda uma lista de produtos e o endereco do comprador
     pedidos.push(pedido) // coloco o pedido na lista de pedidos
     localStorage.setItem('pedidos',JSON.stringify(pedidos))
+    alert("pedido finalizado")
+
 })
 
 calcTotalQuant(carrinhoCompras)
